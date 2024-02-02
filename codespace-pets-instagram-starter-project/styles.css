@@ -159,10 +159,6 @@ main {
     color: #ed4956;
 }
 
-.loader {
-    margin-top: 20px;
-    text-align: center;
-    display: none;
 }
 button{
     background-color: rgb(226, 224, 224);
@@ -213,4 +209,25 @@ button{
 li{
     margin: 20px;
     font-weight: bold;
+}
+.loader {
+    text-align: center;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+  
+}
+
+.loading-spinner {
+    border: 4px solid rgba(0, 0, 0, 0.1);
+    border-left: 4px solid #3498db;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
 }
