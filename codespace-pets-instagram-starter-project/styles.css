@@ -231,3 +231,32 @@ li{
     0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
 }
+@media only screen and (max-width: 600px) {
+    /* Adjust styles for screens up to 600px wide (mobile devices) */
+    .container {
+        padding: 0 10px;
+    }
+
+    .profile {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .profile-image img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .profile-user-settings {
+        margin: 10px 0;
+    }
+
+    .gallery {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+        gap: 10px;
+    }
+
+    .gallery-image {
+        height: 200px;
+    }
+}
